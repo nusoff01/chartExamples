@@ -1,0 +1,31 @@
+.chart-heatmap {
+    flex-direction: column;
+    .chart-axis {
+        path, line {
+            stroke: none;
+        }   
+
+    .chart-heatmapColorScaleContainer {
+        margin-top: 12px;
+        height: 48px;
+        margin-left: 40px;
+        margin-right: 40px;
+        padding-top: 12px;
+        border-top: 1px solid rgba(0,0,0,.3);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        .chart-colorScaleBlock {
+            stroke: lightgrey;
+        }
+        .chart-colorScaleLabel {
+            font-family: 'Merriweather', serif;
+            font-size: 9px;
+            &.chart-colorScaleSpecialModifier {
+                font-size: 12px;
+            }
+        }
+    }
+}
